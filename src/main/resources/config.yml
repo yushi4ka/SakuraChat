@@ -1,1 +1,23 @@
+# By yushi4ka
+# v1.1.5
 
+# Download: PlaceholderAPI and LuckPerms
+# For PlaceholderAPI: /papi ecloud download LuckPerms
+# Using: §
+# Plugin Placeholder: %name% and %message%
+
+global-chat: true
+global-chat-syntax: '!'
+
+local-chat-radius: 25
+
+Messages:
+  cmd-reload-message: "§aКонфигурация плагина была перезагружена!"
+  global-chat-disabled: "§c§l× §cГлобальный чат выключен!"
+  no-players-nearby: "§c§l× §cВас никто не услышал."
+Chat-Messages:
+  local-chat-format: '§eL §r%luckperms_prefix%§r%name%§r%luckperms_suffix%§r: §7%message%'
+  global-chat-format: '§aG §r%luckperms_prefix%§r%name%§r%luckperms_suffix%§r: §e%message%'
+JoinQuit-Messages:
+  Join-message: "§a§l→ §r%name%§a присоединился к серверу."
+  Quit-message: "§c§l← §r%name%§c покинул сервер."
