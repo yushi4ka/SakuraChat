@@ -1,1 +1,12 @@
-
+name: SakuraChat
+version: '1.1.5'
+main: org.winterdev.SakuraChat.SakuraChat
+api-version: '1.21'
+authors: [ yushi4ka ]
+description: Minecraft plugin
+depend: [PlaceholderAPI]
+softdepend: [LuckPerms]
+commands:
+  schat:
+    description: Plugin commands
+    permission: sakurachat.use
