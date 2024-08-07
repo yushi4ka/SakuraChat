@@ -1,6 +1,8 @@
-# SakuraChat
-Convenient chat plugin for Minecraft 1.21
 <div align="center">
+  
+# SakuraChat
+
+### 🔗 Plugin links
 
 [![](https://discord.com/api/guilds/1194350591166652498/widget.png)](https://discord.gg/f3M5aZufpc "Discord")
 [![](https://img.shields.io/modrinth/dt/SakuraChat?color=00AF5C&label=Downloads&logo=modrinth)](https://modrinth.com/plugin/sakurachat "Modrinth Downloads")
@@ -11,10 +13,17 @@ Convenient chat plugin for Minecraft 1.21
 
 <string> ===--------------------------------------------------------=== </string>
 
-## 🔧 Plugin commands
-|      Commands      | Description                                           |
-|----------|-----------------------------------------------------------------|
-| schat `reload`	   | Reloading plugin configurations                       |
-| schat `test`       | Test command                                          |
+Please install it
+
+[![](https://img.shields.io/badge/LuckPerms-LuckPerms?style=flat&color=brightblue)](https://luckperms.net/)
+[![](https://img.shields.io/badge/PlaceholderAPI-PlaceholderAPI?style=flat&color=blue)](https://www.spigotmc.org/resources/placeholderapi.6245/)
+
+<string> ===--------------------------------------------------------=== </string>
+
+### 🔧 Plugin commands
+|      Commands   |  Permissions            | Description                                           |
+|-----------------|-------------------------|-------------------------------------------------------|
+| schat **reload**	|  `sakurachat.admin`     | Reloading plugin configurations                       |
+| schat **test**    |  `sakurachat.admin`     | Test command                                          |
 
 </div>
