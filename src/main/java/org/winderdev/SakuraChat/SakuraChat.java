@@ -1,40 +1,55 @@
 package org.winterdev.SakuraChat;
 
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.winterdev.SakuraChat.Commands.SChat;
-import org.winterdev.SakuraChat.Listeners.JoinQuitPlayer;
-import org.winterdev.SakuraChat.Listeners.Chat;
+import org.winterdev.SakuraChat.Listeners.*;
+import org.winterdev.SakuraChat.Util.EmojiUtil;
 
 public final class SakuraChat extends JavaPlugin {
-
     private static SakuraChat plugin;
+    private YamlConfiguration emojiConfig;
 
-    @Override
+    public SakuraChat() {
+    }
+
     public void onEnable() {
         plugin = this;
 
-        getConfig().options().copyDefaults();
-        saveDefaultConfig();
+        this.getConfig().options().copyDefaults();
+        this.saveDefaultConfig();
 
-        getCommand("schat").setExecutor(new SChat());
+        InputStream inputStream = this.getResource("emoji.yml");
+        this.emojiConfig = YamlConfiguration.loadConfiguration(new InputStreamReader(inputStream));
 
+        EmojiUtil.init(this);
+
+        this.getCommand("schat").setExecutor(new SChat());
         PluginManager pluginManager = Bukkit.getPluginManager();
-        pluginManager.registerEvents(new JoinQuitPlayer(), this);
         pluginManager.registerEvents(new Chat(), this);
+        pluginManager.registerEvents(new ChatDisplay(), this);
+        pluginManager.registerEvents(new JoinQuitPlayer(), this);
 
-        new Expansions(this).register();
-
-        getLogger().info("SakuraChat is enabled!");
+        this.getLogger().info("SakuraChat is enabled!");
     }
 
     public static SakuraChat getPlugin() {
         return plugin;
     }
 
-    @Override
     public void onDisable() {
-        getLogger().info("SakuraChat is disabled!");
+        try {
+            this.saveDefaultConfig();
+            this.emojiConfig.save(String.valueOf(this.getDataFolder()) + "/emoji.yml");
+        } catch (Exception var2) {
+            Exception e = var2;
+            this.getLogger().severe("Error saving config: " + e.getMessage());
+        }
+
+        this.getLogger().info("SakuraChat is disabled!");
     }
 }
