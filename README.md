@@ -9,7 +9,7 @@
 [![](https://img.shields.io/github/watchers/yushi4ka/SakuraChat?style=flat&label=Watchears&color=magenta)](https://github.com/yushi4ka/SakuraChat "GitHub Watchers")
 [![](https://img.shields.io/github/stars/yushi4ka/SakuraChat?style=flat&label=Stars&color=magenta)](https://github.com/yushi4ka/SakuraChat/stargazers "GitHub Stars")
 ## Команды плагина
-| Название | Описание                                                        |
+| Commands | Description                                                        |
 |----------|-----------------------------------------------------------------|
 | schat `reload`	   | Reloading plugin configurations                       |
 | schat `test`      | Test command                                           |
