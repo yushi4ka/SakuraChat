@@ -6,7 +6,7 @@
 
     <groupId>org.winterdev</groupId>
     <artifactId>SakuraChat</artifactId>
-    <version>1.1.5</version>
+    <version>1.2.0</version>
     <packaging>jar</packaging>
 
     <name>SakuraChat</name>
