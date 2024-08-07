@@ -1,9 +1,9 @@
 # By yushi4ka
-# v1.1.5
+# v1.2.0
 
 # Download: PlaceholderAPI and LuckPerms
 # For PlaceholderAPI: /papi ecloud download LuckPerms
-# Using: §
+# Using: § nd &
 # Plugin Placeholder: %name% and %message%
 
 global-chat: true
@@ -11,7 +11,14 @@ global-chat-syntax: '!'
 
 local-chat-radius: 25
 
+chat-display:
+  enable: false
+  expiration-time: 5
+  format: "§f%message%"
+
 Messages:
+  tag: "[&#E43A96S&#E64A9Ea&#E759A6k&#E969AEu&#EA78B6r&#EC88BEa&#ED97C6C&#EFA7CEh&#F0B6D6a&#F2C6DEt&f] "
+  no-permission: "§c§l× §cУвас не достаточно прав!"
   cmd-reload-message: "§aКонфигурация плагина была перезагружена!"
   global-chat-disabled: "§c§l× §cГлобальный чат выключен!"
   no-players-nearby: "§c§l× §cВас никто не услышал."
