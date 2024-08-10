@@ -4,9 +4,10 @@ main: org.winterdev.SakuraChat.SakuraChat
 api-version: '1.21'
 authors: [ yushi4ka ]
 description: Minecraft plugin
-depend: [PlaceholderAPI]
-softdepend: [LuckPerms]
+depend:
+  - LuckPerms
+  - PlaceholderAPI
 commands:
   schat:
     description: Plugin commands
-    permission: sakurachat.use
+    permission: sakurachat.admin
