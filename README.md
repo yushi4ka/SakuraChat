@@ -21,9 +21,9 @@ Please install it
 <string> ===--------------------------------------------------------=== </string>
 
 ### 🔧 Plugin commands
-|      Commands   |  Permissions            | Description                                           |
-|-----------------|-------------------------|-------------------------------------------------------|
+|      Commands     |  Permissions            | Description                                           |
+|-------------------|-------------------------|-------------------------------------------------------|
 | schat **reload**	|  `sakurachat.admin`     | Reloading plugin configurations                       |
-| schat **test**    |  `sakurachat.admin`     | Test command                                          |
+| schat **lang**    |  `sakurachat.admin`     | Change language                                       |
 
 </div>
