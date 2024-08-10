@@ -10,6 +10,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.winterdev.SakuraChat.SakuraChat;
 import org.winterdev.SakuraChat.Util.ColorUtil;
 import org.winterdev.SakuraChat.Util.EmojiUtil;
+import org.winterdev.SakuraChat.Util.LangUtil;
 
 public class Chat implements Listener {
 
@@ -20,20 +21,22 @@ public class Chat implements Listener {
         Player player = event.getPlayer();
         String message = event.getMessage();
 
+        String tag = LangUtil.message("tag");
+
         boolean globalChatEnabled = config.getBoolean("global-chat", true);
         String globalChatSyntax = config.getString("global-chat-syntax", "!");
 
         if (message.startsWith(globalChatSyntax)) {
             if (!globalChatEnabled) {
-                String tag = config.getString("Messages.tag");
-                String chatdisabled = config.getString("Messages.global-chat-disabled");
-                player.sendMessage(tag + chatdisabled);
+                String chatdisabled = LangUtil.message("Messages.global-chat-disabled");
+                String formatChatDisabled = ColorUtil.color(tag + chatdisabled);
+                player.sendMessage(formatChatDisabled);
                 event.setCancelled(true);
                 return;
             }
 
             message = message.substring(globalChatSyntax.length());
-            String format = config.getString("Chat-Messages.global-chat-format");
+            String format = LangUtil.message("Chat-Messages.global-chat-format");
             format = PlaceholderAPI.setPlaceholders(player, format);
             format = format.replace("%name%", player.getName());
             format = format.replace("%message%", message);
@@ -44,7 +47,7 @@ public class Chat implements Listener {
             event.setCancelled(true);
             Bukkit.broadcastMessage(formattedMessage);
         } else {
-            String format = config.getString("Chat-Messages.local-chat-format");
+            String format = LangUtil.message("Chat-Messages.local-chat-format");
             format = PlaceholderAPI.setPlaceholders(player, format);
             format = format.replace("%name%", player.getName());
             format = format.replace("%message%", message);
@@ -67,8 +70,7 @@ public class Chat implements Listener {
                     }
                 }
                 if (!playersNearby) {
-                    String tag = config.getString("Messages.tag");
-                    String noPlayersNearbyMessage = config.getString("Messages.no-players-nearby");
+                    String noPlayersNearbyMessage = LangUtil.message("Messages.no-players-nearby");
                     player.sendMessage(ColorUtil.color(tag + noPlayersNearbyMessage));
                 }
             } else {
