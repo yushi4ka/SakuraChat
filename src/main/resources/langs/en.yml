@@ -1,0 +1,22 @@
+# By yushi4ka
+# v1.2.5
+#
+# Using: § and &
+# Plugin Placeholder: %name% and %message%
+
+tag: "[&#E43A96S&#E64A9Ea&#E759A6k&#E969AEu&#EA78B6r&#EC88BEa&#ED97C6C&#EFA7CEh&#F0B6D6a&#F2C6DEt&f] "
+
+Messages:
+  cmd-no-permission: "§c§l× §cYou don't have enough permissions!"
+  cmd-reload-message: "§a§l✅ §aPlugin configuration has been reloaded!"
+  global-chat-disabled: "§c§l× §cGlobal chat is disabled!"
+  no-players-nearby: "§c§l× §cNo one heard you."
+  lang-changed: "§a§l✅ §aLanguage has been changed to Russian!"
+  invalid-language: "§c§l× §cInvalid language. Available languages: ru, en"
+  lang-usage: "§c§l× §cUsage: /schat lang <ru/en>"
+Chat-Messages:
+  local-chat-format: '§eL §r%luckperms_prefix%§r%name%§r%luckperms_suffix%§r: §7%message%'
+  global-chat-format: '§aG §r%luckperms_prefix%§r%name%§r%luckperms_suffix%§r: §e%message%'
+JoinQuit-Messages:
+  Join-message: "§a§l→ §r%name%§a has joined the server."
+  Quit-message: "§c§l← §r%name%§c has left the server."
