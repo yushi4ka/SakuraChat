@@ -1,8 +1,15 @@
 # By yushi4ka
-# v1.2.5
-
+# By yushi4ka
+# v1.2.5.1
+#
+# Support: https://discord.gg/f3M5aZufpc
+# Source: https://github.com/yushi4ka/SakuraChat
+#
 # Download: PlaceholderAPI and LuckPerms
 # For PlaceholderAPI: /papi ecloud download LuckPerms
+#
+# Using: § and &
+# Plugin Placeholder: %name% and %message%
 
 lang: en.yml
 
@@ -12,6 +19,13 @@ global-chat-syntax: '!'
 local-chat-radius: 25
 
 chat-display:
-  enable: false
+  enable: true
   expiration-time: 5
   format: "§f%message%"
+
+filter:
+  enable: true
+  color: §c
+  list:
+#    - test
+#    - fuck
