@@ -1,5 +1,8 @@
 # By yushi4ka
-# v1.2.5
+# v1.2.5.1
+#
+# Support: https://discord.gg/f3M5aZufpc
+# Source: https://github.com/yushi4ka/SakuraChat
 #
 # Using: § and &
 # Plugin Placeholder: %name% and %message%
@@ -11,9 +14,10 @@ Messages:
   cmd-reload-message: "§a§l✅ §aКонфигурация плагина была перезагружена!"
   global-chat-disabled: "§c§l× §cГлобальный чат выключен!"
   no-players-nearby: "§c§l× §cВас никто не услышал."
-  lang-changed: "§a§l✅ §aЯзык был изменен на русский!"
-  invalid-language: "§c§l× §cНедопустимый язык. Доступные языки: ru, en"
-  lang-usage: "§c§l× §cИспользование: /schat lang <ru/en>"
+  lang-changed: "§a§l✅ §aЯзык был изменен!"
+  lang-already-in-use: "§c§l× §c Данный язык уже используеться."
+  invalid-language: "§c§l× §c Недопустимый язык."
+  lang-usage: "§c§l× §cИспользование: §f/schat lang §c<название языка>"
 Chat-Messages:
   local-chat-format: '§eL §r%luckperms_prefix%§r%name%§r%luckperms_suffix%§r: §7%message%'
   global-chat-format: '§aG §r%luckperms_prefix%§r%name%§r%luckperms_suffix%§r: §e%message%'
