@@ -1,22 +1,26 @@
+# By yushi4ka
+# v1.2.5.1
+#
+# Support: https://discord.gg/f3M5aZufpc
+# Source: https://github.com/yushi4ka/SakuraChat
+
 emoji:
   smile:
     symbol: "☺"
     placeholder: ":)"
-  sad:
-    symbol: "☹"
-    placeholder: ":("
-  heart:
-    symbol: "❤"
-    placeholder: "<3"
-
-
-
+#  sad:
+#    symbol: "☹"
+#    placeholder: ":("
+#  heart:
+#    symbol: "❤"
+#    placeholder: "<3"
+#
   smile1:
     symbol: "☺"
     placeholder: ":smile:"
-  sad1:
-    symbol: "☹"
-    placeholder: ":sad:"
-  heart1:
-    symbol: "❤"
-    placeholder: ":heart:"
+#  sad1:
+#    symbol: "☹"
+#    placeholder: ":sad:"
+#  heart1:
+#    symbol: "❤"
+#    placeholder: ":heart:"
