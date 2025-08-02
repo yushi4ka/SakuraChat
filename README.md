@@ -15,7 +15,6 @@
 Please install it
 
 [![](https://img.shields.io/badge/LuckPerms-LuckPerms?style=flat&color=brightblue)](https://luckperms.net/)
-[![](https://img.shields.io/badge/PlaceholderAPI-PlaceholderAPI?style=flat&color=blue)](https://www.spigotmc.org/resources/placeholderapi.6245/)
 
 <string> ===--------------------------------------------------------=== </string>
 
